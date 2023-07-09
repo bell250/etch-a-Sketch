@@ -1,0 +1,13 @@
+#container{
+    height: 480px;
+    width: 480px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #000;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.sq{
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+} 

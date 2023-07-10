@@ -1,3 +1,14 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: LightGray;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: bisque;
+}
 #container{
     height: 480px;
     width: 480px;
@@ -6,8 +17,34 @@
     border: 1px solid #000;
     justify-content: space-around;
     margin: 0 auto;
+    background-color: white;
 }
 .sq{
     border: 1px solid #ccc;
     box-sizing: border-box;
 } 
+#newGrid{
+    background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+  border: 0;
+  margin-top: 10px;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  transition: box-shadow .2s ease-in-out;
+}
+footer{
+    margin-top: 10px;
+    background-color: #000;
+    padding: 24px;
+   
+    color: white;
+    text-align: center;
+}

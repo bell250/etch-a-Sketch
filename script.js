@@ -10,7 +10,6 @@ function createSquares(size) {
             div.classList.add('sq');
             div.style.height = `${sizes}px`;
             div.style.width = `${sizes}px`;
-
             container.appendChild(div);
         }
     }
@@ -29,4 +28,13 @@ function randomBgColor(){
     let b = Math.floor(Math.random()*256);
     return `rgb(${r},${g},${b})`
 }
+let newGrid= document.querySelector('#newGrid');
+newGrid.addEventListener('click',()=>{
+let num = prompt("enter number os squares not greater than 100");
+  num= parseInt(num);
+  if( isNaN(num) || num < 0 || num > 100){
+  alert("Please enter number between 0 and 100")
+  } else{
+createSquares(num);}
+});
 createSquares(16);
